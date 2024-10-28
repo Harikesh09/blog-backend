@@ -6,6 +6,9 @@ module.exports = {
       args: "start",
       wait_ready: true,
       listen_timeout: 3000,
+      env_production: {
+        NODE_ENV: "production"
+      },
     },
   ],
 };
