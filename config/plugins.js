@@ -3,6 +3,7 @@ module.exports = ({ env }) => ({
     config: {
       provider: "aws-s3",
       providerOptions: {
+        baseUrl: env("AWS_CDN_URL"),
         rootPath: env("AWS_BUCKET_BLOG_DIR"),
         s3Options: {
           credentials: {
